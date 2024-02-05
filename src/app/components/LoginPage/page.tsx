@@ -29,8 +29,8 @@ export default function LoginPage() {
   ];
 
   return (
-    <div className="">
-      <div className="mt-30  grid grid-cols-2 my-16 items-center m-4   max-md:grid-col-1">
+    <div>
+      <div className="grid grid-cols-2 mt-8 items-center  max-md:grid-col-1">
         <div className="col-span-1 pl-48 max-md:max-w-xs">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@ export default function LoginPage() {
                 bullshit
               </a>{" "}
               and giving up on your{" "}
-              <a href="#" className="text-blue-800">
+              <a href="#" className="text-blue-500">
                 privacy
               </a>
               .
@@ -141,19 +141,19 @@ export default function LoginPage() {
 
           <div className="space-y-4">
             <h3 className=" text-base font-bold">Already have an account?</h3>
-            <button className="w-80 px-16 py-2 rounded-[3rem] border  text-blue-400 font-bold">
+            <button className="w-80 px-16 py-2 rounded-[3rem] border hover:bg-slate-900 text-blue-400 font-bold">
               Sign in
             </button>
           </div>
         </div>
       </div>
 
-      <div className="mt-36">
-        <ul className="flex space-x-5">
+      <div className="mt-24">
+        <ul className="flex space-x-3">
           {bunchOfFooterLinks.map((link, index) => (
-            <li key={index} className="text-xs opacity-60">
+            <a key={index} href="#" className="text-xs opacity-60">
               {link}
-            </li>
+            </a>
           ))}
         </ul>
       </div>
